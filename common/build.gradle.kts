@@ -1,3 +1,4 @@
+
 import versioning.BuildConfig
 
 plugins {
@@ -74,12 +75,15 @@ dependencies {
     api(libs.grim.internal)
     compileOnly(libs.grim.internal.shims)
     compileOnly(libs.mongoDriverSync)
-
+    compileOnly("com.google.guava:guava:33.3.1-jre")
+    compileOnly("com.google.code.gson:gson:2.11.0")
     compileOnly(libs.geyser.base.api) {
         isTransitive = false // messes with guava otherwise
     }
 
-    compileOnly(libs.floodgate.api)
+    compileOnly(libs.floodgate.api) {
+        isTransitive = false
+    }
     compileOnly(libs.viaversion)
     compileOnly(libs.viabackwards)
     compileOnly(libs.netty)
