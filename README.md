@@ -23,7 +23,8 @@ It currently supports Minecraft versions 1.8–26.3. Geyser players are fully ex
 This project is considered feature-complete for the 2.0 (open-source) branch. If you would like a bug fix or enhancement and cannot sponsor the work, pull requests are welcome.
 A premium version is planned, which will offer additional subscription-based paid checks, such as heuristics.
 
-# This is a fork, fixing a vulcan  incompatiblity that would kick players. this is based off of PR [#138](https://github.com/Axionize/LightningGrim/pull/138):
+# This is a fork, fixing a vulcan  incompatibility that would kick players with the message "out-of-order packet: (Received X ≠ Expected Y" occasionally. this is based off of PR [#138](https://github.com/Axionize/LightningGrim/pull/138).
+# Make sure to keep ``disable-pong-cancelling: false``
 
 ## Downloads
 
